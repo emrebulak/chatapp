@@ -1,4 +1,5 @@
 import googleIcon from '../assets/img/google.png';
+import avatar from '../assets/img/avatar.png';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase/config';
 import { useState } from 'react';
@@ -22,9 +23,7 @@ const Login = () => {
         <div className="login-container">
             <div className="login-card">
                 <h1>Chat Odası</h1>
-
-                <img src={user?.photoURL} alt="User Photo" />
-
+                
                 <p>Devam etmek için giriş yapın</p>
 
                 <button onClick={handleLogin} className='login-button'>
