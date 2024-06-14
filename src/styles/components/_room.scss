@@ -1,0 +1,30 @@
+.room-container {
+    @extend .login-container;
+}
+
+.room-card {
+    @extend .login-card;
+    width: 20%;
+    min-width: 330px;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.room-input{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.room-button {
+    @extend .login-button;
+    width: 80%;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}

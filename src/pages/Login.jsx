@@ -1,18 +1,14 @@
 import googleIcon from '../assets/img/google.png';
-import avatar from '../assets/img/avatar.png';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase/config';
-import { useState } from 'react';
 
-const Login = () => {
-
-    const [user, setUser] = useState(null);
+const Login = ({ setIsAuth }) => {
 
     const handleLogin = () => {
         signInWithPopup(auth, provider)
             .then((result) => {
-                console.log(result);
-                setUser(result.user);
+                localStorage.setItem('token', result.user.refreshToken);
+                setIsAuth(localStorage.getItem('token'));
             })
             .catch((error) => {
                 console.log(error);
@@ -23,7 +19,7 @@ const Login = () => {
         <div className="login-container">
             <div className="login-card">
                 <h1>Chat Odası</h1>
-                
+
                 <p>Devam etmek için giriş yapın</p>
 
                 <button onClick={handleLogin} className='login-button'>
