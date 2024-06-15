@@ -1,0 +1,95 @@
+.chat-container {
+    @extend .login-container;
+    @include flexAlign(0px, column, center, center);
+
+    header {
+        @include flexAlign(0px, row, space-between, center);
+        background-color: $light-purple-color;
+        color: $white-color;
+        padding: 25px 15px;
+        width: 70%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    main {
+        width: 70%;
+        height: 70vh;
+        background-color: $white-color;
+        padding: 15px;
+        overflow-y: auto;
+        @include flexAlign(5px, column, flex-start);
+
+        .self-message {
+            width: 100%;
+            @include flexAlign(0px, row, flex-end, center);
+
+            p {
+                display: inline;
+                background-color: $orange-color;
+                color: $white-color;
+                padding: 5px 10px;
+                border-radius: 5px 5px 0px 5px;
+            }
+        }
+
+        .other-message {
+            width: 100%;
+            @include flexAlign(7px, row, flex-start, center);
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .user{
+                font-weight: 600;
+            }
+        }
+    }
+
+    footer {
+        background-color: $light-purple-color;
+        width: 70%;
+        padding: 25px 15px;
+        @include flexAlign(15px, row, center, center);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    button {
+        @extend .login-button;
+        padding: 10px 20px;
+        background-color: $orange-color;
+        border-color: $orange-color;
+    }
+
+    button:disabled {
+        filter: brightness(0.7);
+    }
+
+    input {
+        @extend .room-input;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .chat-container {
+        header {
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        main {
+            width: 100%;
+            height: calc(100vh - 50px);
+        }
+
+        footer {
+            width: 100%;
+            border-radius: 0px;
+        }
+    }
+}

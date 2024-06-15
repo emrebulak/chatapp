@@ -11,7 +11,7 @@ const Login = ({ setIsAuth }) => {
                 setIsAuth(localStorage.getItem('token'));
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
     }
 

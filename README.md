@@ -1,8 +1,27 @@
-# React + Vite
+<img src="./src/assets/img/animation.gif" alt="Chat App">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Chat App Projesi (TR)
 
-Currently, two official plugins are available:
+Firebase ve React ile geliştirilen bu yenilikçi chat uygulaması, kullanıcılarına anında ve güvenli mesajlaşma imkanı sunar. Modern ve kullanıcı dostu arayüzü ile hızlıca sohbet etmeye başlayın.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Kullanılan Teknolojiler
+
+- HTML
+- CSS
+- JS
+- REACT
+- SCSS
+- FIREBASE
+
+# Chat App Project (EN)
+
+Developed with Firebase and React, this innovative chat application offers users instant and secure messaging. With its modern and user-friendly interface, start chatting quickly and effortlessly.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JS
+- REACT
+- SCSS
+- FIREBASE
